@@ -62,10 +62,17 @@
   .genius .tag{color:#f2b38f}
   .genius h3{font-family:Fraunces,serif;font-size:1.6rem;margin-bottom:12px}
   .genius p{color:#cfd5e2}
-  .path{list-style:none}
-  .path li{padding:14px 0;border-bottom:1px solid var(--line)}
-  .path b{display:block}
-  .path span{color:var(--muted);font-size:.95rem}
+  .genius{position:sticky;top:96px}
+  .how h3.blk{font-family:Fraunces,serif;font-size:1.35rem;margin-bottom:8px}
+  .how .blk-tag{font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--warm);margin-bottom:6px}
+  .lead-block{margin-bottom:40px}
+  .lead-block p,.design-block>p{color:var(--muted);margin-bottom:12px}
+  .steps{list-style:none;counter-reset:step;margin-top:8px}
+  .steps li{position:relative;padding:16px 0 16px 54px;border-bottom:1px solid var(--line)}
+  .steps li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:16px;width:36px;height:36px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:600;display:flex;align-items:center;justify-content:center}
+  .steps b{display:block}
+  .steps span{display:block;color:var(--muted);font-size:.95rem;margin-top:4px}
+  @media (max-width:800px){.genius{position:static}}
   .tools{display:flex;flex-wrap:wrap;gap:10px}
   .tools span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-weight:500;font-size:.92rem}
   .contact{text-align:center}
@@ -178,14 +185,25 @@
   <div class="wrap how">
     <div>
       <h2>How I Work</h2>
-      <p class="sub">My career has moved from teaching to startup work to leadership. Throughout, I've focused on learners first and on real business results.</p>
-      <ul class="path">
-        <li><b>Director of Customer Success</b><span>MagnaWave · Jan–Oct 2026 · led Education and Support for ~15,000 customers</span></li>
-        <li><b>Director of Education</b><span>MagnaWave · Oct 2024–Jan 2026 · built the curriculum and MPower</span></li>
-        <li><b>Course Lead Instructional Designer (Contract)</b><span>Hurix for WGU · Feb–Oct 2024</span></li>
-        <li><b>Coach → Instructional Designer</b><span>BrainSTEM · Sep 2022–Nov 2023</span></li>
-        <li><b>Teacher &amp; School Leader, MAT</b><span>~12 years · research skills, media literacy, district social studies curriculum</span></li>
-      </ul>
+      <p class="sub">I lead with clarity and design with simplicity.</p>
+
+      <div class="lead-block">
+        <div class="blk-tag">How I Lead</div>
+        <h3 class="blk">Clear is kind</h3>
+        <p>Good coaching starts with safety. People who feel safe enough to be vulnerable can hear honest feedback and grow from it. I follow Bren&eacute; Brown's principle: to be clear is to be kind, and to be unclear is unkind.</p>
+        <p>My teams know where they stand, what's expected of them, and that I'm in their corner. At MagnaWave I coached Education, Support and Customer Care together through standing team syncs, with one shared focus: the customer.</p>
+      </div>
+
+      <div class="design-block">
+        <div class="blk-tag">How I Design</div>
+        <h3 class="blk">It's a simple game</h3>
+        <p><em>Bull Durham</em> calls baseball a simple game. I see learning design the same way. Simple doesn't mean easy, but it does mean you always know which question you're answering.</p>
+        <ol class="steps">
+          <li><b>The problem: what do learners need to know?</b><span>MagnaWave's education treated every customer as a future business owner. I split learners by purpose, personal use or professional use, and designed for each group.</span></li>
+          <li><b>The solution: how will we get them there?</b><span>I built MPower as the umbrella for all company education. I led a contracted development team and used AI-assisted drafting, MindSmith and SME review to write the content for 40+ courses in my first year.</span></li>
+          <li><b>The check: how do we know they got it?</b><span>I ran a week of daily sessions with formative assessments for an LMS rollout. 99% of the sales team could demonstrate understanding by Friday.</span></li>
+        </ol>
+      </div>
     </div>
     <div class="genius">
       <div class="tag">Working Genius</div>
